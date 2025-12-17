@@ -14,7 +14,7 @@
 
 #define RX_PIN 36
 #define TX_PIN 4
-#define SERIAL_CONFIG SERIAL_8E1
+#define SERIAL_CONFIG SERIAL_8N1
 
 #define QUEUE_LENGTH 512
 
@@ -94,7 +94,7 @@ void setup() {
     Serial.println(ETH.localIP());
     server.begin();
 
-    Serial1.begin(115200, SERIAL_CONFIG, RX_PIN, TX_PIN);
+    Serial1.begin(460800, SERIAL_CONFIG, RX_PIN, TX_PIN);
     Serial.println("Serial setup successfully!");
 
     serialToEthernet = xQueueCreate(QUEUE_LENGTH, sizeof(uint8_t));
