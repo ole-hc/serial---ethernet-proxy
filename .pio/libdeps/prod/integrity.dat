@@ -1,7 +1,0 @@
-bblanchon/ArduinoJson@6.21.3
-marvinroger/AsyncMqttClient @ ^0.9.0
-milesburton/DallasTemperature @ ^3.11.0
-Martin-Laclaustra/CronAlarms
-rlogiacco/CircularBuffer@>=1.4.0
-sstaub/Ticker@>=4.4.0
-me-no-dev/AsyncTCP@1.1.1
